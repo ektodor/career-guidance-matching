@@ -1,0 +1,6 @@
+.dropdown-menu li {
+  cursor: pointer;
+  &:hover {
+    background-color: btn-color(ghost-bg-hover);
+  }
+}

@@ -1,1 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+// Custom.scss
+// 1. Include functions first
+@import "bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "./scss/utils/variables";
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+@import "./scss/utils/maps";
+
+// 5. Include complete Bootstrap
 @import "bootstrap/scss/bootstrap";
+
+// 6. Include custom utilities (新增到 $utilities map)
+@import "./scss/utils/utilities";
+@import "./scss/components/button";
+@import "./scss/components/icon";
+@import "./scss/components/input";
+@import "./scss/components/select";
+// 7. 重新執行 utilities API 來產生自訂工具類的 CSS
+@import "bootstrap/scss/utilities/api";
+
+* {
+  letter-spacing: 0.02rem;
+}
+body {
+  font-family: "Inter", "Noto Sans TC", sans-serif;
+}
+textarea::placeholder,
+input:not(.form-floating > .form-control)::placeholder {
+  font-weight: 400 !important;
+  color: text-color(primary) !important;
+  letter-spacing: 0.02rem !important;
+}
+
+// 8. Include layout styles
+@import "./scss/layout/header";
+@import "./scss/layout/footer";
+@import "./scss/layout/backendLayout";

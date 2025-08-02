@@ -1,0 +1,27 @@
+.header {
+  margin: 0.875rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    max-width: 92px;
+  }
+  &__avatar {
+    max-width: 44px;
+  }
+  &__nav-btn {
+    padding: 10px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin: 0.75rem 0;
+    &__logo {
+      max-width: none;
+    }
+  }
+}
+
+// 覆蓋 bs 預設寬高
+.navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

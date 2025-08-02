@@ -1,0 +1,10 @@
+.footer {
+  border-top: 3px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba($gray-85, 0),
+      rgba($gray-85, 50%),
+      rgba($gray-85, 0)
+    )
+    1;
+}

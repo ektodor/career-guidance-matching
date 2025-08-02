@@ -9,6 +9,7 @@ import { UserInfo } from "../views/backend/UserInfo";
 import { Record } from "../views/backend/Record";
 import { CareerPlan } from "../views/backend/CareerPlan";
 import { Layout } from "../views/Layout";
+import { BackendLayout } from "../views/backend/BackendLayout";
 
 const routes = [
   {
@@ -43,23 +44,24 @@ const routes = [
         path: "service-plan",
         Component: ServicePlan,
       },
-    ],
-  },
-  {
-    path: "/admin",
-    Component: Layout,
-    children: [
+      // 因為還是需要 layout 做底層
       {
-        path: "info",
-        Component: UserInfo,
-      },
-      {
-        path: "record",
-        Component: Record,
-      },
-      {
-        path: "career-plan",
-        Component: CareerPlan,
+        path: "/admin",
+        Component: BackendLayout,
+        children: [
+          {
+            path: "info",
+            Component: UserInfo,
+          },
+          {
+            path: "record",
+            Component: Record,
+          },
+          {
+            path: "career-plan",
+            Component: CareerPlan,
+          },
+        ],
       },
     ],
   },

@@ -1,0 +1,208 @@
+$white: #fcfcfd;
+$gray-95: #f0f3f5;
+$gray-90: #e0e5eb;
+$gray-85: #d1d9e1;
+$gray-75: #b2bfcc;
+$gray-60: #8599ad;
+$gray-50: #667f99;
+$gray-30: #3d4d5c;
+$gray-10: #141a1f;
+
+$secondary-90: #d7f4ec;
+$secondary-70: #87dec5;
+$secondary-50: #36c99f;
+$secondary-35: #268c6f;
+
+$blue-97: #f1f4fd;
+$blue-90: #d2d9f9;
+$blue-80: #a4b4f3;
+$blue-70: #778eee;
+$blue-60: #4a69e8;
+$blue-40: #1736b5;
+$blue-25: #0e2271;
+
+$green-90: #defccf;
+$green-40: #47c20a;
+$green-30: #369108;
+
+$alpha: rgba(#141a1f, 0.6);
+
+$red-90: #ffd0cc;
+$red-70: #ff7467;
+$red-45: #e51300;
+
+$orange-90: #ffeacc;
+$orange-48: #f58f00;
+$orange-35: #b26800;
+
+$blue: $blue-60;
+$green: $green-40;
+$orange: $orange-48;
+$red: $red-45;
+
+$secondary: $secondary-50;
+$dark: $gray-10;
+
+$spacer: 1rem;
+$custom-spacers: (
+  10px: $spacer * 0.625,
+  12px: $spacer * 0.75,
+  18px: $spacer * 1.125,
+  20px: $spacer * 1.25,
+  32px: $spacer * 2,
+  40px: $spacer * 2.5,
+  64px: $spacer * 4,
+  72px: $spacer * 4.5,
+  80px: $spacer * 5,
+);
+
+// $table-variants: (
+//   "primary": shift-color($primary, $table-bg-scale),
+//   "secondary": shift-color($secondary, $table-bg-scale),
+//   "success": shift-color($success, $table-bg-scale),
+//   "info": shift-color($info, $table-bg-scale),
+//   "warning": shift-color($warning, $table-bg-scale),
+//   "danger": shift-color($danger, $table-bg-scale),
+//   "light": $light,
+//   "dark": $dark,
+// );
+
+$custom-color: (
+  "icon-primary": $blue,
+  "icon-secondary": $gray-50,
+  "icon-default": $gray-10,
+  "icon-deep": $white,
+  "icon-warning": $red-45,
+);
+
+$custom-bg-color: (
+  "primary": $white,
+  "secondary": $gray-95,
+  "action-primary": $blue,
+  "action-secondary": $secondary-90,
+  "error": $red-45,
+  "mask": $alpha,
+);
+
+$custom-border-color: (
+  "primary": $gray-85,
+  "secondary": $blue,
+);
+
+$custom-text-color: (
+  "primary": $gray-10,
+  "secondary": $gray-50,
+  "hover-primary": $blue,
+  "deepBg-primary": $white,
+  "error": $red-45,
+  "finish": $gray-60,
+);
+
+$custom-btn-color: (
+  "default-bg": $gray-10,
+  "default-bg-hover": $secondary-50,
+  "default-lg-bg": $secondary-50,
+  "default-lg-hover": $blue,
+  "ghost-bg": $white,
+  "ghost-bg-hover": $gray-90,
+  "success-bg": $green-40,
+  "success-bg-hover": $green-30,
+  "danger-bg": $red-70,
+  "danger-bg-hover": $red-45,
+  "warning-bg": $orange-48,
+  "warning-bg-hover": $orange-35,
+  "disabled-bg": $gray-75,
+  "disabled-bg-hover": $gray-50,
+);
+
+$custom-input-color: (
+  "default-bg": $white,
+  "default-border": $gray-85,
+  "active-border-outline": $blue-90,
+  "active-border": $blue,
+  "error-border": $red-45,
+  "error-tips-bg": $red-90,
+  "disabled-bg": $gray-75,
+);
+
+$custom-table-color: (
+  "bg-head": $white,
+  "bg-body-odd": $white,
+  "bg-body-even": $gray-90,
+  "bg-body-hover": $gray-90,
+);
+
+$line-height-sm: 1.2;
+
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 1.5rem;
+
+$custom-fs-size-lg: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  md: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.75rem,
+  4xl: 2rem,
+  5xl: 3rem,
+  display: 5rem,
+);
+
+$custom-fs-size: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  md: 0.875rem,
+  lg: 1rem,
+  xl: 1.125rem,
+  2xl: 1.25rem,
+  3xl: 1.5rem,
+  4xl: 1.75rem,
+  5xl: 2rem,
+  display: 3rem,
+);
+
+@function btn-color($key) {
+  @return map-get($custom-btn-color, $key);
+}
+
+@function text-color($key) {
+  @return map-get($custom-text-color, $key);
+}
+
+@function bg-color($key) {
+  @return map-get($custom-bg-color, $key);
+}
+
+@function input-color($key) {
+  @return map-get($custom-input-color, $key);
+}
+
+@function table-color($key) {
+  @return map-get($custom-table-color, $key);
+}
+
+$input-bg: $white;
+$input-border-color: input-color(default-border);
+
+$input-disabled-color: text-color(secondary);
+$input-disabled-bg: input-color(disabled-bg);
+
+$input-color: text-color(primary);
+$input-border-radius: 0.5rem;
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: input-color(active-border);
+
+// $table-border-color: bg-color(primary);
+$table-striped-order: even;
+
+$form-check-input-checked-color: bg-color(action-primary);
+$form-check-input-checked-bg-color: input-color(default-bg);
+$form-check-input-checked-border-color: bg-color(action-primary);
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'  style='width: 12px; height: 12px;'><circle r='2.75' fill='#{$form-check-input-checked-color}'/></svg>");
+$form-check-input-focus-box-shadow: none;
+$nav-link-color: text-color(primary);
+$table-hover-bg: table-color(bg-body-hover);

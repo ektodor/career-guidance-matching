@@ -1,9 +1,11 @@
 import { NavLink, Outlet } from "react-router";
-
+import { HeaderComponent } from "../components/HeaderComponent";
+import { FooterComponent } from "../components/FooterComponent";
 export function Layout() {
   return (
     <>
-      <nav className="d-flex gap-2">
+      <HeaderComponent />
+      {/* <nav className="d-flex gap-2">
         <NavLink to="/">首頁</NavLink>
         <NavLink to="/service-plan">服務方案</NavLink>
         <NavLink to="/about">關於職旅</NavLink>
@@ -14,10 +16,11 @@ export function Layout() {
         <NavLink to="/admin/record">預約紀錄</NavLink>
         <NavLink to="/admin/career-plan">職旅計畫</NavLink>
         <NavLink to="/policy">隱私權/用戶條款</NavLink>
-      </nav>
+      </nav> */}
       <div>
         <Outlet />
       </div>
+      <FooterComponent />
     </>
   );
 }

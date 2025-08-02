@@ -1,0 +1,102 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      local-vars: (
+        "bg-opacity": 1,
+      ),
+      values:
+        map-merge(
+          map-get(map-get($utilities, "background-color"), "values"),
+          ($custom-bg-color)
+        ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "color"), "values"),
+              ($custom-text-color)
+            ),
+        )
+      ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-color":
+      map-merge(
+        map-get($utilities, "border-color"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "border-color"), "values"),
+              ($custom-border-color)
+            ),
+        )
+      ),
+  )
+);
+
+@each $key, $val in $custom-fs-size {
+  // @debug "fs-#{$key}";
+  .fs-#{$key} {
+    font-size: $val !important;
+  }
+  @include media-breakpoint-up(lg) {
+    .fs-#{$key} {
+      font-size: map-get($map: $custom-fs-size-lg, $key: $key) !important;
+    }
+  }
+}
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border":
+      map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "border-width":
+      map-merge(
+        map-get($utilities, "border-width"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
