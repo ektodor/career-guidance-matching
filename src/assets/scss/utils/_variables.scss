@@ -67,12 +67,12 @@ $custom-spacers: (
 //   "dark": $dark,
 // );
 
-$custom-color: (
-  "icon-primary": $blue,
-  "icon-secondary": $gray-50,
-  "icon-default": $gray-10,
-  "icon-deep": $white,
-  "icon-warning": $red-45,
+$custom-icon-color: (
+  "primary": $blue,
+  "secondary": $gray-50,
+  "default": $gray-10,
+  "deep": $white,
+  "warning": $red-45,
 );
 
 $custom-bg-color: (
@@ -161,8 +161,12 @@ $custom-fs-size: (
   3xl: 1.5rem,
   4xl: 1.75rem,
   5xl: 2rem,
-  display: 3rem,
+  display: 2rem,
 );
+
+@function icon-color($key) {
+  @return map-get($custom-icon-color, $key);
+}
 
 @function btn-color($key) {
   @return map-get($custom-btn-color, $key);
@@ -206,3 +210,7 @@ $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://w
 $form-check-input-focus-box-shadow: none;
 $nav-link-color: text-color(primary);
 $table-hover-bg: table-color(bg-body-hover);
+
+$card-border-radius: 1.5rem;
+$card-border-width: none;
+$card-title-spacer-y: 1rem;

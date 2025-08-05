@@ -1,0 +1,55 @@
+.title-background {
+  background-image: url("../../images/index/gradient-ball.png");
+  //   background-image: url("../../images/index/bg-grid.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo-icon {
+  width: 48px;
+}
+
+.bg-decorate {
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: bg-color(secondary);
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.chat-decorate {
+  height: 64px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  &-content {
+    width: 120px;
+    height: 50px;
+    border: 2px solid var(--Global-Border-secondary, #4a69e8);
+    border-radius: 0.75rem;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-bottom: 2px solid var(--Global-Border-secondary, #4a69e8);
+      border-right: 2px solid var(--Global-Border-secondary, #4a69e8);
+      background-color: white;
+      bottom: 7px;
+      left: calc(50% - 7px);
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,3 +1,20 @@
+%btn-custom {
+  padding: $spacer * 0.75 $spacer * 0.75 $spacer * 0.75 $spacer * 0.75;
+  // padding: $spacer * 0.5 $spacer * 0.5 $spacer * 0.5 $spacer * 0.75;
+  display: flex;
+  gap: $spacer * 0.25;
+  align-items: center;
+  justify-content: center;
+  line-height: $line-height-base;
+  font-weight: $font-weight-normal;
+  letter-spacing: 0.02em;
+  border-radius: $spacer;
+  @include media-breakpoint-up(lg) {
+    padding: $spacer * 0.75 $spacer * 0.75 $spacer * 0.75 $spacer * 1.25;
+    line-height: $line-height-sm;
+  }
+}
+
 .btn-default {
   @include button-variant(
     btn-color(default-bg),
@@ -13,20 +30,7 @@
     transparent,
     text-color(disabled-bg-hover)
   );
-  padding: $spacer * 0.75 $spacer * 0.5 $spacer * 0.75 $spacer * 0.75;
-  display: flex;
-  gap: $spacer * 0.25;
-  align-items: center;
-  justify-content: center;
-  line-height: $line-height-base;
-  font-weight: $font-weight-normal;
-  letter-spacing: 0.02em;
-  border-radius: $spacer;
-  @include media-breakpoint-up(lg) {
-    padding: $spacer * 0.75 $spacer * 0.75 $spacer * 0.75 $spacer * 1.25;
-    line-height: $line-height-sm;
-    // font-weight: $font-weight-medium;
-  }
+  @extend %btn-custom;
 }
 
 .btn-default-outline {
@@ -48,19 +52,23 @@
     transparent,
     text-color(primary)
   );
-  padding: $spacer * 0.75 0;
-  display: flex;
-  //   gap: $spacer * 0.25;
-  align-items: center;
-  justify-content: center;
-  padding: $spacer * 0.75 $spacer * 0.5 $spacer * 0.75 $spacer * 0.75;
-  line-height: $line-height-base;
-  font-weight: $font-weight-normal;
-  letter-spacing: 0.02em;
-  border-radius: $spacer;
-  @include media-breakpoint-up(lg) {
-    padding: $spacer * 0.75 $spacer * 0.75 $spacer * 0.75 $spacer * 1.25;
-    gap: $spacer * 0.25;
-    line-height: $line-height-sm;
-  }
+  @extend %btn-custom;
+}
+
+.btn-lg {
+  @include button-variant(
+    btn-color(default-lg-bg),
+    transparent,
+    text-color(primary),
+    btn-color(default-lg-hover),
+    transparent,
+    text-color(deepBg-primary),
+    btn-color(default-lg-hover),
+    transparent,
+    text-color(deepBg-primary),
+    btn-color(disabled-bg),
+    transparent,
+    text-color(disabled-bg-hover)
+  );
+  @extend %btn-custom;
 }

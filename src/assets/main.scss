@@ -23,6 +23,8 @@
 @import "./scss/components/icon";
 @import "./scss/components/input";
 @import "./scss/components/select";
+@import "./scss/components/card";
+
 // 7. 重新執行 utilities API 來產生自訂工具類的 CSS
 @import "bootstrap/scss/utilities/api";
 
@@ -38,8 +40,18 @@ input:not(.form-floating > .form-control)::placeholder {
   color: text-color(primary) !important;
   letter-spacing: 0.02rem !important;
 }
+.scrollbar-width-none {
+  scrollbar-width: none;
+}
+
+ul li::marker {
+  // 改變點的大小
+  font-size: 0.75rem;
+}
 
 // 8. Include layout styles
 @import "./scss/layout/header";
 @import "./scss/layout/footer";
 @import "./scss/layout/backendLayout";
+
+@import "./scss/pages/index";

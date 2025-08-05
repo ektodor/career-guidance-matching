@@ -2,6 +2,7 @@ import Icon from "@mdi/react";
 import { NavLink } from "react-router";
 export function ButtonComponent({
   isOutline = false,
+  isBtnLg = false,
   icon,
   iconSize = "20px",
   iconPosition = "left",
@@ -13,7 +14,11 @@ export function ButtonComponent({
   target,
   children,
 }) {
-  const style = isOutline ? "btn-default-outline" : "btn-default";
+  const style = isOutline
+    ? "btn-default-outline"
+    : isBtnLg
+    ? "btn-lg"
+    : "btn-default";
   const padding = iconPosition == "left" ? "pe-12px pe-lg-20px" : "";
   if (to) {
     return (
@@ -21,7 +26,7 @@ export function ButtonComponent({
         className={({ isActive }) =>
           `btn ${style}  ${otherClass} text-center fs-md ${padding} ${
             isActive ? "active" : ""
-          }`
+          } `
         }
         to={to}
         disabled={disabled}
@@ -37,7 +42,7 @@ export function ButtonComponent({
   }
   return (
     <button
-      className={`btn ${style}  ${otherClass} text-center fs-md ${padding}`}
+      className={`btn ${style}  ${otherClass} text-center fs-md ${padding} `}
       disabled={disabled}
       type={type}
       data-bs-toggle={toggle}
