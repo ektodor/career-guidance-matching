@@ -14,7 +14,7 @@ export function UserInfo() {
     <>
       <form>
         <div className="d-md-flex">
-          <h1 className="mb-3 fw-medium fs-5 lh-sm backend-title-width  me-md-4">
+          <h1 className="mb-3 fw-medium fs-5 lh-sm backend-title-width  me-lg-4">
             個人資料
           </h1>
           <div className="w-100">

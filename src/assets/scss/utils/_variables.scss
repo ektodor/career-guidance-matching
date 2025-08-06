@@ -49,6 +49,7 @@ $custom-spacers: (
   12px: $spacer * 0.75,
   18px: $spacer * 1.125,
   20px: $spacer * 1.25,
+  28px: $spacer * 1.75,
   32px: $spacer * 2,
   40px: $spacer * 2.5,
   64px: $spacer * 4,
@@ -206,6 +207,7 @@ $table-striped-order: even;
 $form-check-input-checked-color: bg-color(action-primary);
 $form-check-input-checked-bg-color: input-color(default-bg);
 $form-check-input-checked-border-color: bg-color(action-primary);
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>");
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'  style='width: 12px; height: 12px;'><circle r='2.75' fill='#{$form-check-input-checked-color}'/></svg>");
 $form-check-input-focus-box-shadow: none;
 $nav-link-color: text-color(primary);

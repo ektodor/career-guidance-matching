@@ -99,7 +99,7 @@ export function CareerPlan() {
   return (
     <main>
       <section className=" pb-4 pb-md-5 border-1 border-bottom border-primary d-lg-flex">
-        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-md-4">
+        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-lg-4">
           <h1 className="mb-0 fs-2xl fw-medium lh-sm mb-lg-12px">
             職旅計劃概況
           </h1>
@@ -111,11 +111,11 @@ export function CareerPlan() {
           </div>
         </div>
         <div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               目前職業狀態
             </h2>
-            <div className="d-flex flex-wrap column-gap-3 column-gap-lg-4 row-gap-2 px-2 mb-3 mb-md-4">
+            <div className="d-flex flex-wrap column-gap-3 column-gap-lg-4 row-gap-2 px-2 mb-3 mb-lg-4">
               {careerList.map((item) => {
                 return (
                   <RadioComponent
@@ -129,7 +129,7 @@ export function CareerPlan() {
                 );
               })}
             </div>
-            <div className="mb-3 mb-md-4">
+            <div className="mb-3 mb-lg-4">
               <SelectCompnent
                 select={industrySelect}
                 list={industry}
@@ -144,11 +144,11 @@ export function CareerPlan() {
               />
             </div>
           </div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               月收入區間
             </h2>
-            <div className="d-flex flex-wrap column-gap-3 row-gap-2 px-2 mb-3 mb-md-4">
+            <div className="d-flex flex-wrap column-gap-3 row-gap-2 px-2 mb-3 mb-lg-4">
               {salary.map((item) => {
                 return (
                   <RadioComponent
@@ -163,7 +163,7 @@ export function CareerPlan() {
               })}
             </div>
             <textarea
-              className="form-control fs-md py-3 mb-3 mb-md-4"
+              className="form-control fs-md py-3 mb-3 mb-lg-4"
               placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）"
               style={{ minHeight: "160px" }}
               maxLength={300}
@@ -188,7 +188,7 @@ export function CareerPlan() {
         </div>
       </section>
       <section className="py-4 py-md-5 border-1 border-bottom border-primary d-lg-flex">
-        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-md-4">
+        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-lg-4">
           <h1 className="mb-0 fs-2xl fw-medium lh-sm mb-lg-12px">職涯規劃</h1>
           <div className="ms-auto d-flex align-items-center ms-lg-0">
             <p className="mb-0 text-center fs-md text-secondary">欄位皆為</p>
@@ -198,9 +198,9 @@ export function CareerPlan() {
           </div>
         </div>
         <div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <textarea
-              className="form-control fs-md py-3 mb-3 mb-md-4"
+              className="form-control fs-md py-3 mb-3 mb-lg-4"
               placeholder="1 年短期職涯目標（最多 300 字）"
               style={{ minHeight: "160px" }}
               maxLength={300}
@@ -212,11 +212,11 @@ export function CareerPlan() {
               maxLength={300}
             ></textarea>
           </div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               理想工作模式
             </h2>
-            <div className="d-flex flex-wrap column-gap-3 row-gap-2 px-2 mb-3 mb-md-4">
+            <div className="d-flex flex-wrap column-gap-3 row-gap-2 px-2 mb-3 mb-lg-4">
               {idealWorkingMode.map((item) => {
                 return (
                   <RadioComponent
@@ -235,7 +235,7 @@ export function CareerPlan() {
               placeholder="目標薪資/收入"
             ></input>
           </div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               目前面臨的職涯挑戰
             </h2>
@@ -254,7 +254,7 @@ export function CareerPlan() {
               })}
             </div>
           </div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               期望獲得的協助與資源
             </h2>
@@ -295,7 +295,7 @@ export function CareerPlan() {
         </div>
       </section>
       <section className="py-4 py-md-5 border-1 border-bottom border-primary d-lg-flex">
-        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-md-4">
+        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-lg-4">
           <h1 className="mb-0 fs-2xl fw-medium lh-sm mb-lg-12px">
             專業技能區塊
           </h1>
@@ -306,7 +306,7 @@ export function CareerPlan() {
           </div>
         </div>
         <div>
-          <div className="mb-3 mb-md-4">
+          <div className="mb-3 mb-lg-4">
             <h2 className="mb-2 fs-md text-primary fw-normal lh-base">
               感興趣的服務方案
             </h2>
@@ -326,19 +326,19 @@ export function CareerPlan() {
             </div>
           </div>
           <textarea
-            className="form-control fs-md py-3 mb-3 mb-md-4"
+            className="form-control fs-md py-3 mb-3 mb-lg-4"
             placeholder="專業背景和核心競爭力（最多300字）"
             style={{ minHeight: "160px" }}
             maxLength={300}
           ></textarea>
           <textarea
-            className="form-control fs-md py-3 mb-3 mb-md-4"
+            className="form-control fs-md py-3 mb-3 mb-lg-4"
             placeholder="專業技能（最多300字）"
             style={{ minHeight: "160px" }}
             maxLength={300}
           ></textarea>
           <textarea
-            className="form-control fs-md py-3 mb-3 mb-md-4"
+            className="form-control fs-md py-3 mb-3 mb-lg-4"
             placeholder="語文能力（最多300字）"
             style={{ minHeight: "160px" }}
             maxLength={300}
@@ -352,7 +352,7 @@ export function CareerPlan() {
         </div>
       </section>
       <section className="py-4 py-md-5  d-lg-flex">
-        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-md-4">
+        <div className="d-flex mb-3 text-primary flex-lg-column backend-title-width  me-lg-4">
           <h1 className="mb-0 fs-2xl fw-medium lh-sm mb-lg-12px">教育背景</h1>
           <div className="ms-auto d-flex align-items-center ms-lg-0">
             <p className="mb-0 text-center fs-md text-secondary">
@@ -362,7 +362,7 @@ export function CareerPlan() {
         </div>
         <div className="w-100">
           <textarea
-            className="form-control fs-md py-3 mb-3 mb-md-4"
+            className="form-control fs-md py-3 mb-3 mb-lg-4"
             placeholder="學歷背景（最多500字）"
             style={{ minHeight: "160px" }}
             maxLength={500}

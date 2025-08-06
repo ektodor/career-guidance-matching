@@ -34,7 +34,7 @@
 body {
   font-family: "Inter", "Noto Sans TC", sans-serif;
 }
-textarea::placeholder,
+textarea:not(.form-floating > .form-control)::placeholder,
 input:not(.form-floating > .form-control)::placeholder {
   font-weight: 400 !important;
   color: text-color(primary) !important;
@@ -47,6 +47,10 @@ input:not(.form-floating > .form-control)::placeholder {
 ul li::marker {
   // 改變點的大小
   font-size: 0.75rem;
+}
+
+.checkbox:checked {
+  background-color: $form-check-input-checked-color;
 }
 
 // 8. Include layout styles
