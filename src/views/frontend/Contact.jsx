@@ -68,7 +68,7 @@ export function Contact() {
   const [rule1Checkbox, setRule1Checkbox] = useState(false);
   const [rule2Checkbox, setRule2Checkbox] = useState(false);
   return (
-    <main className="py-5">
+    <main className="py-5  bg-secondary">
       <div className="container ">
         <div className="mb-4 mb-lg-5 position-relative">
           <h1 className="fs-4xl fw-bold lh-sm mb-3 text-center mb-lg-4">
