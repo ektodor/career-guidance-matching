@@ -7,40 +7,47 @@ import icon from "@images/logo-icon-w.svg";
 import { mdiChevronRight, mdiPhoneOutline, mdiEmailOutline } from "@mdi/js";
 import { ButtonComponent } from "@/components/ButtonComponent";
 import Icon from "@mdi/react";
+// 導入所有圖片
+import mentor1 from "@images/about/mentor-1.png";
+import mentor2 from "@images/about/mentor-2.png";
+import mentor3 from "@images/about/mentor-3.png";
+import mentor4 from "@images/about/mentor-4.png";
+import mentor5 from "@images/about/mentor-5.png";
+import mentor6 from "@images/about/mentor-6.png";
 export function About() {
   const mentor = [
     {
-      img: "/src/assets/images/about/mentor-1.png",
+      img: mentor1,
       title: "數位遊牧先驅",
       tags: ["遠端工作策略", "數位遊牧生活設計"],
       name: "陳志遠 Ethan Chen",
     },
     {
-      img: "/src/assets/images/about/mentor-2.png",
+      img: mentor2,
       title: "個人品牌策略專家",
       tags: ["個人品牌建立", "內容行銷策略", "故事行銷"],
       name: "林曉彤 Clara Lin",
     },
     {
-      img: "/src/assets/images/about/mentor-3.png",
+      img: mentor3,
       title: "財務自由規劃顧問",
       tags: ["稅務優化", "被動收入建立", "現金流管理"],
       name: "王建明 Marcus",
     },
     {
-      img: "/src/assets/images/about/mentor-4.png",
+      img: mentor4,
       title: "創意接案與多元收入專家",
       tags: ["創意變現策略", "線上課程開發"],
       name: "張雅琳 Ariel",
     },
     {
-      img: "/src/assets/images/about/mentor-5.png",
+      img: mentor5,
       title: "遠端工作技術顧問",
       tags: ["專案管理自動化", "虛擬團隊管理"],
       name: "李俊宏 Kevin Lee",
     },
     {
-      img: "/src/assets/images/about/mentor-6.png",
+      img: mentor6,
       title: "生活設計與健康平衡教練",
       tags: ["時間管理", "職涯與家庭整合"],
       name: "吳曉雯 Vivian",
