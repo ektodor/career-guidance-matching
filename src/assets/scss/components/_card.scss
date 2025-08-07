@@ -45,3 +45,16 @@
     border-radius: 0.75rem;
   }
 }
+
+.card-mentor {
+  width: 320px;
+  &:hover {
+    img {
+      transition: 0.3s;
+      transform: scale(105%);
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    width: 400px;
+  }
+}
