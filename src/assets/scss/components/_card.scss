@@ -58,3 +58,40 @@
     width: 400px;
   }
 }
+
+.card-hot {
+  position: relative;
+  &::after {
+    position: absolute;
+    border-bottom-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    content: "HOT";
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: bg-color("green");
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 0.875rem;
+  }
+}
+
+.card-plan {
+  &-list {
+    padding-left: 0;
+    list-style: none;
+    &-style::before {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: icon-color(primary) 2px solid;
+      margin-right: 0.5rem;
+      transform: rotate(45deg);
+    }
+  }
+  &-image {
+    max-width: 300px;
+  }
+}
