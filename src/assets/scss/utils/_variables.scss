@@ -219,3 +219,13 @@ $table-hover-bg: table-color(bg-body-hover);
 $card-border-radius: 1.5rem;
 $card-border-width: none;
 $card-title-spacer-y: 1rem;
+
+$accordion-padding-y: 1.5rem;
+$accordion-padding-x: 1.5rem;
+$accordion-icon-width: 1.5rem;
+$accordion-button-active-icon: url("../../images/index/downArrow.svg");
+$accordion-button-icon: url("../../images/index/leftArrow.svg");
+$accordion-button-active-bg: bg-color(primary);
+$accordion-border-width: 1px;
+$accordion-border-color: border-color(primary);
+$accordion-border-radius: 0.75rem;

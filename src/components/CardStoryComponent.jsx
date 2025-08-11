@@ -12,7 +12,9 @@ export function CardStoryComponent({ item }) {
           <p className="ps-2 mb-0 fs-sm  border-start border-1">{item.name}</p>
         </div>
       </div>
-      <p className="card-story-badge fs-md fw-medium lh-sm">數位遊牧 2 年</p>
+      <p className="card-story-badge fs-md fw-medium lh-sm">
+        數位遊牧 {item.year} 年
+      </p>
     </div>
   );
 }
