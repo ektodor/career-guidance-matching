@@ -12,6 +12,8 @@ export function ButtonComponent({
   otherClass,
   toggle,
   target,
+  dismiss,
+  cliclEvent,
   children,
 }) {
   const style = isOutline
@@ -47,6 +49,8 @@ export function ButtonComponent({
       type={type}
       data-bs-toggle={toggle}
       data-bs-target={target}
+      onClick={cliclEvent}
+      data-bs-dismiss={dismiss}
     >
       {icon && iconPosition == "left" && <Icon path={icon} size={iconSize} />}
       {children}

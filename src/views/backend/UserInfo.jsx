@@ -77,7 +77,7 @@ export function UserInfo() {
             <div className="form-floating mb-3  mb-lg-4">
               <input
                 id="mail"
-                type="mail"
+                type="email"
                 className="form-control fs-md"
                 defaultValue={"mokumaru@mail.com"}
               />
@@ -90,7 +90,7 @@ export function UserInfo() {
             </div>
             <div className="form-floating mb-3  mb-lg-4">
               <input
-                id="phone"
+                id="tel"
                 type="number"
                 className="form-control fs-md"
                 defaultValue={"0912345678"}
@@ -159,7 +159,7 @@ export function UserInfo() {
                 <input
                   id="newPwd"
                   className="form-control fs-md"
-                  type="text"
+                  type="password"
                   placeholder="新密碼"
                 />
                 <label htmlFor="newPwd" className="fs-sm">
@@ -171,6 +171,7 @@ export function UserInfo() {
                   id="newPwdAgain"
                   className="form-control fs-md"
                   placeholder="再次密碼"
+                  type="password"
                 />
                 <label htmlFor="newPwdAgain" className="fs-sm">
                   再次密碼

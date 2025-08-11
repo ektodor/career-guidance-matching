@@ -105,7 +105,7 @@ export function CareerPlan() {
           </h1>
           <div className="ms-auto d-flex align-items-center ms-lg-0">
             <p className="mb-0 text-center fs-md text-secondary">欄位皆為</p>
-            <span class="badge rounded-pill text-bg-danger py-1 px-2 ms-1 fs-sm fw-medium lh-sm">
+            <span className="badge rounded-pill text-bg-danger py-1 px-2 ms-1 fs-sm fw-medium lh-sm">
               必填
             </span>
           </div>
@@ -192,7 +192,7 @@ export function CareerPlan() {
           <h1 className="mb-0 fs-2xl fw-medium lh-sm mb-lg-12px">職涯規劃</h1>
           <div className="ms-auto d-flex align-items-center ms-lg-0">
             <p className="mb-0 text-center fs-md text-secondary">欄位皆為</p>
-            <span class="badge rounded-pill text-bg-danger py-1 px-2 ms-1 fs-sm fw-medium lh-sm">
+            <span className="badge rounded-pill text-bg-danger py-1 px-2 ms-1 fs-sm fw-medium lh-sm">
               必填
             </span>
           </div>
